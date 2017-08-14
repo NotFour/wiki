@@ -1,0 +1,17 @@
+a {
+  color: @colorBlack;
+  text-decoration: underline;
+  &:focus {
+    outline: 2px solid @colorMain;
+  }
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.3s linear;
+  &:focus {
+    outline: @colorAlternative linear 1px;
+  }
+}

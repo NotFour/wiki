@@ -1,0 +1,165 @@
+/*
+ *author: Developed by NotFour
+ */
+@media screen and (min-width: 961px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+}
+body {
+  font-family: sans-serif;
+  background-color: #A9D0D6;
+  color: #222;
+  margin: 0;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ *styles for titles, paragraphs, links
+ */
+a {
+  color: #222;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 2px solid #A9D0D6;
+}
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.3s linear;
+}
+.link:focus {
+  outline: #4d90fe linear 1px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+.title {
+  font-weight: normal;
+}
+@media screen and (min-width: 961px) {
+  .title_xs {
+    font-size: 2.4rem;
+  }
+  .title_s {
+    font-size: 3rem;
+  }
+  .title_m {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .title_xs {
+    font-size: 2rem;
+  }
+  .title_s {
+    font-size: 2.6rem;
+  }
+  .title_m {
+    font-size: 3rem;
+  }
+}
+p {
+  line-height: 2.2;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+/*
+ *styles for page layout
+ */
+.page {
+  min-height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 30px 75px;
+  padding-bottom: 220px;
+  background-color: #fff;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 63px;
+}
+.header__menu {
+  width: 78%;
+  font-size: 1.8rem;
+  display: inline-block;
+}
+.main-container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.footer {
+  min-width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  background-color: #F2EBDE;
+  font-size: 1.4rem;
+  padding: 60px 40px 15px;
+}
+/*
+ *styles for blocks
+ */
+.logo {
+  width: 21%;
+  text-align: center;
+  line-height: .79em;
+  font-size: 6.4rem;
+  text-transform: uppercase;
+}
+.menu__list {
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.menu__list-item {
+  display: inline-block;
+  margin-left: 1.6rem;
+}
+.menu__list-item:first-child {
+  margin-left: 0;
+}
+.menu__list-item_active {
+  background-color: #F2EBDE;
+  border: solid 1px #BFB5A4;
+}
+.menu__link {
+  padding: 1rem;
+}

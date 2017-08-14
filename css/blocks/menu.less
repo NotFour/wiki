@@ -1,0 +1,25 @@
+.menu__list {
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.menu__list-item {
+  display: inline-block;
+  margin-left: 1.6rem;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.menu__list-item_active {
+  background-color: @colorGray;
+  border: solid 1px #BFB5A4;
+
+}
+
+.menu__link {
+  padding: 1rem;
+}
